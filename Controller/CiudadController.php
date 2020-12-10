@@ -49,5 +49,7 @@ class CiudadController
         }else{
             $this->ciudadView->ShowMessage("No Hay ciudades");
         }
+
+        $this->ciudadView->ShowTable($list); //ENVIO LA LISTA A LA VISTA PARA GENERARLA CON SMARTY
     }
 }

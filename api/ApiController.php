@@ -44,6 +44,8 @@ class ApiController
             }else{
                 $this->view->response("No existe el centro con el id: $idcentro",404);
             }
+        }else{
+            $this->view->response("!isset params",500);
         }
     }
 
